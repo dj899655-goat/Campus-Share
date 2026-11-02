@@ -29,7 +29,7 @@ export async function POST(request) {
       if (!isAllowedDomain && !isEduOrAc) {
         return NextResponse.json(
           {
-            error: `Only official college email domains are allowed (e.g., @aitpune.edu.in). Current domain: @${domain}`,
+            error: `Only allowed email domains are supported (e.g., @gmail.com, @aitpune.edu.in). Current domain: @${domain}`,
           },
           { status: 400 }
         );
