@@ -128,7 +128,7 @@ export default function NavBar() {
                 className="flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-sm shadow-indigo-200 hover:shadow-indigo-300 transition-all"
               >
                 <User className="w-4 h-4" />
-                <span>Login with Gmail</span>
+                <span>Login / Register</span>
               </Link>
             )}
           </div>
@@ -202,7 +202,7 @@ export default function NavBar() {
                 className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-sm"
               >
                 <User className="w-4 h-4" />
-                <span>Login with Gmail</span>
+                <span>Login / Register</span>
               </Link>
             )}
           </div>

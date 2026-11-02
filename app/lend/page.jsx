@@ -186,13 +186,13 @@ export default function LendPage() {
           <GraduationCap className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
           <h2 className="text-2xl font-black text-slate-900 mb-2">Login Required</h2>
           <p className="text-sm text-slate-600 mb-6">
-            You must log in with your Gmail address to list items and manage borrow requests.
+            You must log in to list items and manage borrow requests.
           </p>
           <Link
             href="/login"
             className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-md shadow-indigo-200 transition-all"
           >
-            <span>Login with Gmail</span>
+            <span>Login / Register</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
