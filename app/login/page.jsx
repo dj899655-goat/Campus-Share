@@ -89,9 +89,8 @@ export default function LoginPage() {
         throw new Error(data.error || "Invalid OTP.");
       }
 
-      // Success: redirect to choose role screen
-      router.push("/choose");
-      router.refresh();
+      // Success: redirect to choose role screen with full reload
+      window.location.href = "/choose";
     } catch (err) {
       setError(err.message || "Verification failed.");
     } finally {
@@ -174,10 +173,10 @@ export default function LoginPage() {
             <div>
               <div className="flex items-center justify-between mb-1.5">
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
-                  Gmail Address
+                  Email Address
                 </label>
                 <span className="text-[11px] text-indigo-600 font-semibold bg-indigo-50 px-2 py-0.5 rounded-full border border-indigo-100">
-                  @gmail.com
+                  Gmail / College Email
                 </span>
               </div>
               <div className="relative">
@@ -189,13 +188,13 @@ export default function LoginPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="yourname@gmail.com"
+                  placeholder="e.g. dj106923@gmail.com or student@aitpune.edu.in"
                   className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all text-slate-900"
                 />
               </div>
               <p className="text-[11px] text-slate-500 mt-1 flex items-center gap-1">
                 <Info className="w-3 h-3 text-slate-400" />
-                Please enter your personal or student @gmail.com address.
+                Enter your Gmail or college email address to receive your verification code.
               </p>
             </div>
 

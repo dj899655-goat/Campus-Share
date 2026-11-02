@@ -18,12 +18,15 @@ export async function POST(request) {
     const normalizedEmail = email.trim().toLowerCase();
     const domain = normalizedEmail.split("@")[1];
 
-    // Require @gmail.com address
+    // Verify allowed email domains (@gmail.com or college email)
     if (!CONFIG.DEMO_ACCEPT_ANY_EMAIL) {
-      if (domain !== "gmail.com") {
+      const isAllowed = CONFIG.ALLOWED_EMAIL_DOMAINS.some(
+        (allowed) => domain === allowed || domain.endsWith(`.${allowed}`)
+      );
+      if (!isAllowed) {
         return NextResponse.json(
           {
-            error: `Only @gmail.com email addresses are allowed. Please enter your Gmail ID.`,
+            error: `Please enter a valid email address (e.g. yourname@gmail.com or your college email).`,
           },
           { status: 400 }
         );
