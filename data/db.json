@@ -1,0 +1,143 @@
+{
+  "users": [
+    {
+      "id": "usr_seed_1",
+      "name": "Aman Sharma",
+      "email": "aman.sharma@college.edu",
+      "dob": "2003-05-14",
+      "createdAt": "2026-10-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr_seed_2",
+      "name": "Priya Patel",
+      "email": "priya.patel@college.edu",
+      "dob": "2004-02-21",
+      "createdAt": "2026-10-02T09:30:00.000Z"
+    },
+    {
+      "id": "usr_seed_3",
+      "name": "Rahul Verma",
+      "email": "rahul.verma@college.edu",
+      "dob": "2003-09-10",
+      "createdAt": "2026-10-03T11:15:00.000Z"
+    },
+    {
+      "id": "usr_1793603570408_skbnw",
+      "name": "Divyanshu Joshi",
+      "email": "vipandeep_260197@aitpune.edu.in",
+      "dob": "2007-11-03",
+      "createdAt": "2026-11-02T07:12:50.408Z"
+    },
+    {
+      "id": "usr_1793609688190_m06lf",
+      "name": "Nirbhay singh",
+      "email": "nirbhaysingh_260262@aitpune.edu.in",
+      "dob": "2008-04-03",
+      "createdAt": "2026-11-02T08:54:48.190Z"
+    }
+  ],
+  "items": [
+    {
+      "id": "item_seed_1",
+      "ownerId": "usr_seed_1",
+      "ownerName": "Aman Sharma",
+      "ownerEmail": "aman.sharma@college.edu",
+      "title": "Casio FX-991EX ClassWiz Scientific Calculator",
+      "category": "Electronics",
+      "condition": "Like New",
+      "pricePerDay": 25,
+      "deposit": 250,
+      "description": "Essential scientific calculator with high-res display, matrix, vectors, and equation solver. Approved for midsem and endsem exams. In working condition with case.",
+      "status": "requested",
+      "createdAt": "2026-10-25T10:00:00.000Z"
+    },
+    {
+      "id": "item_seed_2",
+      "ownerId": "usr_seed_2",
+      "ownerName": "Priya Patel",
+      "ownerEmail": "priya.patel@college.edu",
+      "title": "Engineering Mechanics by Timoshenko & Young (5th Ed)",
+      "category": "Book",
+      "condition": "Good",
+      "pricePerDay": 15,
+      "deposit": 150,
+      "description": "Standard syllabus textbook for 1st & 2nd year engineering students. Clean pages with no missing leaves or ink scribbles. Great for exam prep.",
+      "status": "available",
+      "createdAt": "2026-10-26T12:30:00.000Z"
+    },
+    {
+      "id": "item_seed_3",
+      "ownerId": "usr_seed_3",
+      "ownerName": "Rahul Verma",
+      "ownerEmail": "rahul.verma@college.edu",
+      "title": "Standard White Lab Coat (Size M - 100% Cotton)",
+      "category": "Lab equipment",
+      "condition": "Good",
+      "pricePerDay": 20,
+      "deposit": 100,
+      "description": "Clean, freshly ironed white cotton laboratory coat with deep pockets. Mandatory for Chemistry, Physics, and Bio practical labs.",
+      "status": "available",
+      "createdAt": "2026-10-27T09:15:00.000Z"
+    },
+    {
+      "id": "item_1793603639809_yp3n6",
+      "ownerId": "usr_1793603570408_skbnw",
+      "ownerName": "Divyanshu Joshi",
+      "ownerEmail": "vipandeep_260197@aitpune.edu.in",
+      "title": "Camera",
+      "category": "Electronics",
+      "condition": "Good",
+      "pricePerDay": 20,
+      "deposit": 250,
+      "description": "it is very good camera with DSLR",
+      "status": "requested",
+      "createdAt": "2026-11-02T07:13:59.809Z"
+    },
+    {
+      "id": "item_1793609737665_rvrrt",
+      "ownerId": "usr_1793609688190_m06lf",
+      "ownerName": "Nirbhay singh",
+      "ownerEmail": "nirbhaysingh_260262@aitpune.edu.in",
+      "title": "Camera",
+      "category": "Electronics",
+      "condition": "Brand New",
+      "pricePerDay": 40,
+      "deposit": 188,
+      "description": "it is good camera",
+      "status": "available",
+      "createdAt": "2026-11-02T08:55:37.665Z"
+    }
+  ],
+  "requests": [
+    {
+      "id": "req_1793609751573_e3f49",
+      "itemId": "item_1793603639809_yp3n6",
+      "itemTitle": "Camera",
+      "lenderId": "usr_1793603570408_skbnw",
+      "lenderName": "Divyanshu Joshi",
+      "lenderEmail": "vipandeep_260197@aitpune.edu.in",
+      "borrowerId": "usr_1793609688190_m06lf",
+      "borrowerName": "Nirbhay singh",
+      "borrowerEmail": "nirbhaysingh_260262@aitpune.edu.in",
+      "borrowerDob": "2008-04-03",
+      "status": "pending",
+      "requestDate": "2026-11-02T08:55:51.573Z",
+      "updatedAt": "2026-11-02T08:55:51.573Z"
+    },
+    {
+      "id": "req_1793609824914_i86ei",
+      "itemId": "item_seed_1",
+      "itemTitle": "Casio FX-991EX ClassWiz Scientific Calculator",
+      "lenderId": "usr_seed_1",
+      "lenderName": "Aman Sharma",
+      "lenderEmail": "aman.sharma@college.edu",
+      "borrowerId": "usr_1793609688190_m06lf",
+      "borrowerName": "Nirbhay singh",
+      "borrowerEmail": "nirbhaysingh_260262@aitpune.edu.in",
+      "borrowerDob": "2008-04-03",
+      "status": "pending",
+      "requestDate": "2026-11-02T08:57:04.914Z",
+      "updatedAt": "2026-11-02T08:57:04.914Z"
+    }
+  ]
+}
