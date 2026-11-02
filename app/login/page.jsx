@@ -177,7 +177,7 @@ export default function LoginPage() {
                   College Email Address
                 </label>
                 <span className="text-[11px] text-indigo-600 font-semibold bg-indigo-50 px-2 py-0.5 rounded-full border border-indigo-100">
-                  @aitpune.in
+                  @aitpune.edu.in
                 </span>
               </div>
               <div className="relative">
@@ -189,13 +189,13 @@ export default function LoginPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="e.g. snehangshudas_260267@aitpune.in"
+                  placeholder="e.g. snehangshu_260198@aitpune.edu.in"
                   className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all text-slate-900"
                 />
               </div>
               <p className="text-[11px] text-slate-500 mt-1 flex items-center gap-1">
                 <Info className="w-3 h-3 text-slate-400" />
-                Must be your official college email ending in @aitpune.in.
+                Must be your official college email ending in @aitpune.edu.in.
               </p>
             </div>
 
