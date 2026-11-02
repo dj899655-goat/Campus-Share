@@ -1,11 +1,9 @@
 export const CONFIG = {
   APP_NAME: "CampusShare",
   ALLOWED_EMAIL_DOMAINS: [
-    "gmail.com",
-    "aitpune.edu.in",
-    "aitpune.in"
+    "gmail.com"
   ],
-  // When false, only allowed domains (e.g. @gmail.com, @aitpune.edu.in) are allowed
+  // Restricted strictly to @gmail.com email addresses
   DEMO_ACCEPT_ANY_EMAIL: false,
   // When true, displays the OTP on screen with an autofill button (real email is still sent)
   DEMO_SHOW_OTP_ON_SCREEN: true,

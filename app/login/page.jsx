@@ -114,12 +114,12 @@ export default function LoginPage() {
             <GraduationCap className="w-8 h-8" />
           </div>
           <h1 className="text-2xl font-black text-slate-900 tracking-tight">
-            {step === 1 ? "College Verification" : "Enter Verification Code"}
+            {step === 1 ? "Login with Gmail" : "Enter Verification Code"}
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-1.5">
             {step === 1
-              ? "Verify your student identity to access peer lending & borrowing."
-              : `A 6-digit OTP has been issued for ${email}`}
+              ? "Enter your Gmail address to receive your 6-digit verification code."
+              : `A 6-digit OTP has been sent to ${email}`}
           </p>
         </div>
 
@@ -174,10 +174,10 @@ export default function LoginPage() {
             <div>
               <div className="flex items-center justify-between mb-1.5">
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
-                  Email Address
+                  Gmail Address
                 </label>
                 <span className="text-[11px] text-indigo-600 font-semibold bg-indigo-50 px-2 py-0.5 rounded-full border border-indigo-100">
-                  @gmail.com / College
+                  @gmail.com
                 </span>
               </div>
               <div className="relative">
@@ -189,13 +189,13 @@ export default function LoginPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="e.g. yourname@gmail.com or student@aitpune.edu.in"
+                  placeholder="yourname@gmail.com"
                   className="w-full pl-10 pr-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all text-slate-900"
                 />
               </div>
               <p className="text-[11px] text-slate-500 mt-1 flex items-center gap-1">
                 <Info className="w-3 h-3 text-slate-400" />
-                Use your Gmail or official college email address to receive your OTP.
+                Please enter your personal or student @gmail.com address.
               </p>
             </div>
 

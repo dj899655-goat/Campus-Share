@@ -56,7 +56,7 @@ export default function HomePage() {
               href="/login"
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 text-base font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-lg shadow-indigo-200 hover:shadow-indigo-300 transition-all hover:-translate-y-0.5"
             >
-              <span>Get started — verify your college email</span>
+              <span>Get started — instant Gmail OTP</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
 
@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-lg mx-auto text-left">
             <div className="flex items-center gap-2 text-xs font-medium text-slate-600 bg-white/70 p-2.5 rounded-lg border border-slate-200 shadow-sm">
               <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-              <span>College Email Verified</span>
+              <span>Instant Gmail OTP</span>
             </div>
             <div className="flex items-center gap-2 text-xs font-medium text-slate-600 bg-white/70 p-2.5 rounded-lg border border-slate-200 shadow-sm">
               <Coins className="w-4 h-4 text-amber-600 shrink-0" />

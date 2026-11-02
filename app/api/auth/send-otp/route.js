@@ -18,18 +18,12 @@ export async function POST(request) {
     const normalizedEmail = email.trim().toLowerCase();
     const domain = normalizedEmail.split("@")[1];
 
-    // Domain validation unless demo mode permits any email
+    // Require @gmail.com address
     if (!CONFIG.DEMO_ACCEPT_ANY_EMAIL) {
-      const isAllowedDomain = CONFIG.ALLOWED_EMAIL_DOMAINS.some((allowed) => {
-        const cleanAllowed = allowed.includes("@") ? allowed.split("@")[1].trim().toLowerCase() : allowed.trim().toLowerCase();
-        return domain === cleanAllowed || domain.endsWith(`.${cleanAllowed}`);
-      });
-      const isEduOrAc = domain.endsWith(".edu") || domain.endsWith(".ac.in") || domain.endsWith(".edu.in");
-
-      if (!isAllowedDomain && !isEduOrAc) {
+      if (domain !== "gmail.com") {
         return NextResponse.json(
           {
-            error: `Only allowed email domains are supported (e.g., @gmail.com, @aitpune.edu.in). Current domain: @${domain}`,
+            error: `Only @gmail.com email addresses are allowed. Please enter your Gmail ID.`,
           },
           { status: 400 }
         );
